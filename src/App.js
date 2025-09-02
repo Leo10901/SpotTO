@@ -108,6 +108,7 @@ const globalStyles = `
 
   .text-content h1 {
     font-size: 2.5rem;
+    margin-top: -10px; 
     margin-bottom: 20px;
     text-shadow: 0 0 20px rgba(255,255,255,0.3);
     font-family: 'Inter', sans-serif;
@@ -685,18 +686,21 @@ function App() {
   return (
     <>
     <Helmet>
-      <link rel="icon" href={faviconImage} />
-    </Helmet>
+  <link rel="icon" href={faviconImage} />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PN39F2Z66M"></script>
+  <script>
+    {`
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-PN39F2Z66M');
+    `}
+  </script>
+  <meta name="description" content="Volunteering website to find quality opportunities to high school students in Toronto" />
+  <meta name="keywords" content="best,quality,spot,#1,elevate,volunteer opportunities in Toronto, high school community service, 40 volunteer hours Toronto, teen volunteer opportunities, summer volunteer programs Toronto, internships Toronto, grants for teens Toronto" />
+  <meta name="google-site-verification" content="LmsqcHzsUCstwRMZxvAuh7d4qS77HYlqvfIYNVS3-y4" />
+</Helmet>
     <style>{globalStyles}</style>
-    <div style={{ 
-      width: '100vw', 
-      minHeight: '100vh', 
-      background: '#000000',
-      position: 'relative',
-      margin: 0,
-      padding: 0
-    }}></div>
-      <style>{globalStyles}</style>
       <div style={{ 
         width: '100vw', 
         minHeight: '100vh', 
@@ -710,7 +714,7 @@ function App() {
           <div className="nav-links">
           <a href="#about">ABOUT</a>
           <a href="#contact">CONTACT</a>
-          <a href="blog.html" target="_blank">BLOG</a>
+          <a href="/blog.html" target="_blank">BLOG</a>
           </div>
         </nav>
 
@@ -791,11 +795,11 @@ function App() {
               <p>
                 SpotTO is a centralized hub or the "Spot" for students to find volunteering, internships, scholarships, grants, our blog and more!
               </p>
-              <br></br>
+              <br />
               <p>
                 To access the services simply search for a specific opportunity (eg. Sick Kids Hospital) or a type (Volunteer, Internship, Scholarship)
               </p>
-              <br></br>
+              <br />
               <p>
                 Founded in partnership with Bloor Collegiate Institute, we understand the challenges students 
                 face when searching for meaningful experiences. Our mission is to connect ambitious young students 
@@ -811,7 +815,7 @@ function App() {
                 
                 {/* Main headline - EXACT styling */}
                 <h1 className="ai-headline">
-                  Enhance your<br/>
+                  Enhance your<br />
                    productivity.
                 </h1>
                 
