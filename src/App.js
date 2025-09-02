@@ -1,11 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import Orb from './Orb.jsx';
 import './Orb.css';
+import opportunitiesData from './opportunities.json';
+import spotImage from './test.jpg';
+import { Helmet } from 'react-helmet';
+import faviconImage from './favicon.ico';
+
+
 
 // Remove default browser margins/padding and add Inter font
 const globalStyles = `
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
-  
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
   * {
     margin: 0;
     padding: 0;
@@ -19,7 +24,8 @@ const globalStyles = `
     width: 100%;
     height: 100%;
     background: #000000;
-    font-family: 'Inter', sans-serif;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  max-width: 20rem;          /* max-w-xs = 320px */
   }
   
   #root {
@@ -123,7 +129,7 @@ const globalStyles = `
  .search-container {
             margin: 30px auto;
             text-align: center;
-            max-width: 650px;
+            max-width: 800px;
             padding: 0 20px;
             position: relative;
         }
@@ -138,7 +144,7 @@ const globalStyles = `
             width: 100%;
             padding: 12px 44px 12px 12px;
             font-size: 18px;
-            border-radius: 8px;
+            border-radius: 40px;
             border: 1px solid rgba(255, 255, 255, 0.3);
             background: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(20px);
@@ -278,6 +284,257 @@ const globalStyles = `
         .search-results::-webkit-scrollbar-thumb:hover {
             background: rgba(255, 255, 255, 0.3);
         }
+/* Add these styles to your existing globalStyles string - just append them */
+
+/* AI Window About Section Styles */
+.about-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 40px;
+  color: white;
+}
+
+.about-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 60px;
+  margin-bottom: 60px;
+}
+
+.about-text {
+  flex: 1;
+  text-align: left;
+}
+
+.about-text h2 {
+  font-size: 2.2rem;
+  margin-bottom: 24px;
+  font-weight: 700;
+  text-shadow: 0 0 20px rgba(255,255,255,0.3);
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* EXACT AI Window Design */
+.ai-window {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  border-radius: 24px;
+  overflow: hidden;
+  background: #000000;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+/* Small header text - EXACT match */
+.ai-small-header {
+  position: absolute;
+  top: 20px;
+  left: 45px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  z-index: 4;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Main headline - EXACT typography match */
+
+
+/* Your image - fills entire container */
+.ai-main-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  z-index: 2;
+  border-radius: 24px;
+}
+
+
+/* Remove gradient overlay - image provides the gradient */
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .about-text {
+    text-align: center;
+  }
+  
+  .ai-window {
+    height: 500px;
+  }
+  
+  
+  .ai-headline {
+  position: absolute;
+  top: 35px;
+  left: 45px;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 0.95;
+  margin: 0;
+  z-index: 10;
+  font-family: 'Inter', sans-serif;
+  max-width: 450px;
+  text-shadow: none;
+}
+  
+  .ai-small-header {
+    top: 20px;
+    left: 30px;
+    font-size: 14px;
+  }
+}
+ .ai-headline {
+  position: absolute;
+  top: 55px;
+  left: 45px;
+  color: #ffffff;
+  font-size: 1.25rem;        /* text-xl = 20px */
+  font-weight: 600;          /* font-semibold */
+  line-height: 1.2;          /* Default for text-wrap:balance */
+  margin: 0;
+  z-index: 10;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  max-width: 20rem;          /* max-w-xs = 320px */
+  text-align: left;
+  text-wrap: balance;
+}
+
+@media (min-width: 768px) {
+  .ai-headline {
+    font-size: 1.875rem;      /* md:text-3xl = 30px */
+  }
+} 
+       
+
+        /* Contact Section Styles */
+        .contact-section {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.03);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 60px 40px 40px;
+            margin-top: 80px;
+        }
+
+        .contact-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+            color: white;
+        }
+
+        .contact-content h2 {
+            font-size: 2.2rem;
+            margin-bottom: 30px;
+            font-weight: 700;
+            text-shadow: 0 0 20px rgba(255,255,255,0.3);
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .contact-icon {
+            width: 24px;
+            height: 24px;
+            opacity: 0.8;
+        }
+
+        .contact-label {
+            font-size: 0.9rem;
+            opacity: 0.7;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+
+        .contact-value {
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+
+        .contact-value a {
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.2s ease;
+        }
+
+        .contact-value a:hover {
+            opacity: 0.7;
+        }
+
+        .footer-text {
+            font-size: 0.9rem;
+            opacity: 0.6;
+            margin-top: 30px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .about-content {
+                flex-direction: column;
+                gap: 40px;
+            }
+
+            .about-text {
+                text-align: center;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            .about-text h2, .contact-content h2 {
+                font-size: 1.8rem;
+            }
+
+            .orb-container-wrapper {
+                width: 300px;
+                height: 300px;
+            }
+
+            .spotto-text {
+                font-size: 40px;
+            }
+        }
 
 `;
 
@@ -285,648 +542,67 @@ function App() {
   const [searchQuery, setSearchQuery] = useState('');
   const [searchResults, setSearchResults] = useState([]);
   const [showResults, setShowResults] = useState(false);
+  const [placeholderText, setPlaceholderText] = useState('');
+  const [isTyping, setIsTyping] = useState(true);
+  const [opportunities, setOpportunities] = useState([]);
 
-  // Your opportunities data
-  const opportunities = [
-    {
-      "title": "2025 Belmont Innovation Labs Fall",
-      "type": "internship",
-      "deadline": "Seasonal Intake",
-      "link": "https://belmont.csod.com/ux/ats/careersite/10/home/requisition/4160?c=belmont&sq=req4160",
-      "description": "Supports civic governance solutions and changemaker leadership."
-    },
-    {
-      "title": "2025 Regional Civic Tech Innovation Challenge (Asia Pacific)",
-      "type": "internship",
-      "deadline": "Seasonal Intake",
-      "link": "https://belmont.csod.com/ux/ats/careersite/10/home/requisition/4160?c=belmont&sq=req4160",
-      "description": "Support civic governance solutions and changemaker leadership."
-    },
-    {
-      "title": "2025 AI & Neurotech Grants – Up to $300K",
-      "type": "grant",
-      "deadline": "June 30 2025",
-      "link": "https://foresight.org/request-for-proposals/",
-      "description": "Open call for proposals in cutting-edge brain tech and AI research."
-    },
-    {
-      "title": "2025 Partner for Global Fund for Children (GFC)",
-      "type": "internship",
-      "deadline": "June 30 2025",
-      "link": "https://globalfundforchildren.my.site.com/GFCGrants/s/expression-of-interest?language=en_US",
-      "description": "Join a global network supporting youth-led, community-based organizations."
-    },
-    {
-      "title": "2025 Postdoctoral Fellowships in Science Communication – South Africa",
-      "type": "internship",
-      "deadline": "Seasonal Intake",
-      "link": "https://www0.sun.ac.za/crest/wp-content/uploads/2024/10/CREST-Postdoc-Application-2024.pdf",
-      "description": "Advance civic science at Stellenbosch University in 2025."
-    },
-    {
-      "title": "2025 Barak-Meghna River Basin Storytellers Fellowship",
-      "type": "internship",
-      "deadline": "June 20 2025",
-      "link": "https://forms.gle/rG2r1KbyfW6qLo3y6",
-      "description": "Support storytelling and environmental justice across South Asia."
-    },
-    {
-      "title": "2025 The Leaders Summit 2025 – 20-100% Fee Waivers Available",
-      "type": "volunteer",
-      "deadline": "Dec 1 2025",
-      "link": "https://isldofficial.com/washington-usa-register/",
-      "description": "Build leadership capacity and global networks for impact."
-    },
-    {
-      "title": "2025 UNESCO International Literacy Prizes",
-      "type": "grant",
-      "deadline": "June 27 2025",
-      "link": "https://unesco-2023.limesurvey.net/913298?lang=en",
-      "description": "Recognizing innovative and impactful literacy projects worldwide."
-    },
-    {
-      "title": "2025 Teachers' Leadership Institute Canada (Fully Funded)",
-      "type": "volunteer",
-      "deadline": "June 16 2025",
-      "link": "https://www.akfc.ca/get-involved/teachers-leadership-institute/",
-      "description": "Global citizenship education program for outstanding educators."
-    },
-    {
-      "title": "2025 AmplifyChange Opportunity Grant",
-      "type": "grant",
-      "deadline": "16 June 2025",
-      "link": "https://amplifychange.org/grant-type/opportunity-grant/",
-      "description": "Up to £75,000 to strengthen grassroots SRHR advocacy."
-    },
-    {
-      "title": "2025 H2HC Prizes for Innovation – $300K",
-      "type": "grant",
-      "deadline": "July 1 2025",
-      "link": "https://justfund.us",
-      "description": "Advancing youth health equity through food and nutrition solutions."
-    },
-    {
-      "title": "2025 Challenge Program Officer – MIT Solve",
-      "type": "internship",
-      "deadline": "Seasonal Intake",
-      "link": "https://careers.peopleclick.com/careerscp/client_mit/external/jobDetails/jobDetail.html?jobPostId=32370&localeCode=en-us",
-      "description": "Lead global open innovation challenges from within a dynamic team."
-    },
-    {
-      "title": "Harvard Ventures-TECH Summer Program",
-      "type": "summer",
-      "deadline": "Rolling Admissions",
-      "link": "https://tech.seas.harvard.edu/summer/apply",
-      "description": "Join Harvard's summer tech program to learn from experts and work on innovative projects."
-    },
-    {
-      "title": "Yale Young Global Scholars",
-      "type": "summer",
-      "deadline": "January 14th",
-      "link": "https://globalscholars.yale.edu/how-to-apply",
-      "description": "Academic enrichment program at Yale for outstanding high school students from around the world."
-    },
-    {
-      "title": "Johns Hopkins Pre-College Summer Program",
-      "type": "summer",
-      "deadline": "January 8",
-      "link": "https://summer.jhu.edu/programs-courses/pre-college-programs/",
-      "description": "Rigorous summer courses for high school students in STEM and humanities."
-    },
-    {
-      "title": "Dev Degree by Shopify",
-      "type": "summer",
-      "deadline": "September 15",
-      "link": "https://devdegree.ca/",
-      "description": "Four-year program with a paid internship at Shopify and a CS degree."
-    },
-    {
-      "title": "Amazon Future Engineer Scholarship Program",
-      "type": "summer",
-      "deadline": "Seasonal Intake",
-      "link": "https://www.amazonfutureengineer.com/scholarships",
-      "description": "Scholarships and internship opportunities for students in CS or engineering."
-    },
-    {
-      "title": "SHAD Canada",
-      "type": "summer",
-      "deadline": "Seasonal Intake",
-      "link": "https://www.shad.ca/apply/",
-      "description": "Summer enrichment program for high-achieving Canadian students in STEM and business."
-    },
-    {
-      "title": "Meta Summer Academy",
-      "type": "summer",
-      "deadline": "Seasonal Intake",
-      "link": "https://metasummeracademy.com/",
-      "description": "Explore tech and product development careers at Meta with mentorship and hands-on experience."
-    },
-    {
-      "title": "University of Toronto Camp Counsellor",
-      "type": "summer",
-      "deadline": "Seasonal Intake",
-      "link": "https://www.uoft.ca/summer-camps",
-      "description": "Lead and inspire campers at UofT's summer camps, develop leadership skills."
-    },
-    {
-      "title": "The Rockefeller University Summer Science Research Program",
-      "type": "summer",
-      "deadline": "Seasonal Intake",
-      "link": "https://www.rockefeller.edu/outreach/ssrp/",
-      "description": "Summer research program for students interested in biomedical sciences."
-    },
-    {
-      "title": "Columbia Writing Program",
-      "type": "summer",
-      "deadline": "Course Starts July 21-31",
-      "link": "https://precollege.sps.columbia.edu/programs/summer-programs/columbia-writing-academy-summer",
-      "description": "Two-week intensive writing course at Columbia for university or college prep."
-    },
-    {
-      "title": "Nokia Summer Internship",
-      "type": "summer",
-      "deadline": "Seasonal Intake",
-      "link": "https://www.nokia.com/about-us/careers/student-and-graduate-opportunities/canada/future-tech-summer-internship/",
-      "description": "Eight-week internship with Nokia engineering teams."
-    },
-    {
-      "title": "Summer Company Ontario",
-      "type": "grant",
-      "deadline": "Seasonal Intake",
-      "link": "https://www.ontario.ca/page/start-summer-company-students",
-      "description": "Learn to run your own student business with mentorship and support."
-    },
-    {
-      "title": "Sick Kids Hospital",
-      "type": "volunteer",
-      "deadline": "March 20th",
-      "link": "https://www.sickkids.ca/en/careers-volunteer/volunteering/volunteer-programs/",
-      "description": "Volunteer at Toronto's largest children's hospital in various roles."
-    },
-    {
-      "title": "St. Joseph Hospital",
-      "type": "volunteer",
-      "deadline": "Ongoing",
-      "link": "https://www.volgistics.com/appform/2122758960",
-      "description": "Support patients and staff in a healthcare setting."
-    },
-    {
-      "title": "Micheal Garron Hospital",
-      "type": "volunteer",
-      "deadline": "Ongoing",
-      "link": "https://www.tehn.ca/careers-volunteering/volunteering/student-volunteer-program",
-      "description": "Hospital volunteer program with various support roles."
-    },
-    {
-      "title": "Volunteering in India",
-      "type": "volunteer",
-      "deadline": "Ongoing",
-      "link": "https://www.volunteeringindia.com/blog/best-volunteering-programs-in-india-for-high-school-students/#:~:text=Street%20Children%20Volunteering%20in%20India,-This%20is%20undoubt",
-      "description": "Work with underprivileged children in India through education and support."
-    },
-    {
-      "title": "Elections Canada",
-      "type": "volunteer",
-      "deadline": "Election Dependant",
-      "link": "https://www.elections.ca/scripts/vis/FindED?L=e&ED=&EV=&EV_TYPE=&PC=&Prov=&ProvID=&MapID=&QID=-1&PageID=20&TPageID=33",
-      "description": "Volunteer in federal elections and get paid above minimum wage."
-    },
-    {
-      "title": "Art Gallery of Ontario",
-      "type": "volunteer",
-      "deadline": "Seasonal Intake",
-      "link": "https://ago.ca/volunteer",
-      "description": "Volunteer in various departments at the AGO and support art events."
-    },
-    {
-      "title": "YMCA of Greater Toronto",
-      "type": "volunteer",
-      "deadline": "Ongoing",
-      "link": "https://ymcagta.org/join-our-team/volunteer-with-the-ymca",
-      "description": "Volunteer in youth programs, fitness, or community outreach across GTA."
-    },
-    {
-      "title": "Toronto Public Library",
-      "type": "volunteer",
-      "deadline": "Ongoing",
-      "link": "https://www.torontopubliclibrary.ca/about-the-library/volunteer/",
-      "description": "Support literacy and learning at Toronto library branches."
-    },
-    {
-      "title": "Royal Ontario Museum",
-      "type": "volunteer",
-      "deadline": "Seasonal Intake",
-      "link": "https://www.rom.on.ca/en/join-us/volunteer",
-      "description": "Volunteer at the ROM in guided tours and educational programs."
-    },
-    {
-      "title": "Toronto Zoo",
-      "type": "volunteer",
-      "deadline": "Multiple Intakes",
-      "link": "https://www.torontozoo.com/tz/volunteer",
-      "description": "Help with animal care, education, and conservation programs."
-    },
-    {
-      "title": "Daily Bread Food Bank",
-      "type": "volunteer",
-      "deadline": "Ongoing",
-      "link": "https://www.dailybread.ca/volunteer/",
-      "description": "Help sort, distribute food, or assist in outreach programs."
-    },
-    {
-      "title": "Volunteer Toronto",
-      "type": "volunteer",
-      "deadline": "Ongoing",
-      "link": "https://www.volunteertoronto.ca/networking/default.asp",
-      "description": "Portal for many more Toronto volunteer opportunities."
-    },
-    {
-      "title": "RBC Summer Tech Labs Program",
-      "type": "internship",
-      "deadline": "Seasonal Intake",
-      "link": "https://jobs.rbc.com/ca/en/amplify",
-      "description": "Eight-week paid internship with workshops and mentoring at RBC."
-    },
-    {
-      "title": "TKS",
-      "type": "internship",
-      "deadline": "Ongoing",
-      "link": "https://tks.softr.app/tks2526waitlist",
-      "description": "Accelerator program for ambitious young people."
-    },
-    {
-      "title": "Ladder Internships",
-      "type": "internship",
-      "deadline": "Constant Opportunities",
-      "link": "https://www.ladderinternships.com/ladder-internships-blog/law-internships-for-high-school-stude",
-      "description": "Connects high school students with remote internships."
-    },
-    {
-      "title": "Indeed",
-      "type": "internship",
-      "deadline": "Constant Opportunities!",
-      "link": "https://ca.indeed.com/q-internships-for-high-school-students-l-ontario-jobs.html",
-      "description": "Job search platform listing internship opportunities."
-    },
-    {
-      "title": "Cincinnati Museum",
-      "type": "internship",
-      "deadline": "Seasonal Intake",
-      "link": "https://www.cincymuseum.org/internship-opportunities/",
-      "description": "Unpaid internships in museum operations and education."
-    },
-    {
-      "title": "Inspirit AI",
-      "type": "internship",
-      "deadline": "Constant Opportunities",
-      "link": "https://www.inspiritai.com/blogs/ai-blog/business-internships-for-high-school-students",
-      "description": "Curated list of business internships for students."
-    },
-    {
-      "title": "Formation + Netflix Internship",
-      "type": "internship",
-      "deadline": "Seasonal Intake",
-      "link": "https://formation.dev/partners/netflix",
-      "description": "Collaborate with Netflix pros on tech projects."
-    },
-    {
-      "title": "Stand Out Search",
-      "type": "internship",
-      "deadline": "Constant Opportunities!",
-      "link": "https://www.standoutsearch.com/",
-      "description": "Career platform connecting students with internships."
-    },
-    {
-      "title": "Youth of Canada",
-      "type": "internship",
-      "deadline": "Constant Opportunities!",
-      "link": "https://www.youthofcanada.ca/opportunities1",
-      "description": "Connects students with scholarships and other opportunities."
-    },
-    {
-      "title": "Job Bank Youth",
-      "type": "internship",
-      "deadline": "Constant Opportunities!",
-      "link": "https://www.jobbank.gc.ca/youth",
-      "description": "Government site for jobs and internships for youth."
-    },
-    {
-      "title": "Crimson Education",
-      "type": "internship",
-      "deadline": "Ongoing",
-      "link": "https://www.crimsoneducation.org/ca/blog/internships-for-high-school-students/",
-      "description": "Website with high-quality internship listings."
-    },
-    {
-      "title": "College Vine",
-      "type": "internship",
-      "deadline": "Ongoing",
-      "link": "https://blog.collegevine.com/computer-science-internships-for-high-school-students",
-      "description": "Blog with many internship opportunities for students."
-    },
-    {
-      "title": "NASA Internships",
-      "type": "internship",
-      "deadline": "Seasonal Intake",
-      "link": "https://stemgateway.nasa.gov/public/s/explore-opportunities",
-      "description": "Internships at NASA centers for students interested in space."
-    },
-    {
-      "title": "Air Force Research Library Scholar Program",
-      "type": "internship",
-      "deadline": "Seasonal Intake",
-      "link": "https://afrlscholars.usra.edu/scholarsprogram/application/",
-      "description": "Research opportunities in aerospace and defense technology."
-    },
-    {
-      "title": "Genspace BioRocket Internship",
-      "type": "internship",
-      "deadline": "Seasonal Intake",
-      "link": "https://www.genspace.org/biorocket",
-      "description": "Biotechnology internship with hands-on lab experience."
-    },
-    {
-      "title": "MIT Women's Technology Program",
-      "type": "internship",
-      "deadline": "Seasonal Intake",
-      "link": "https://web.mit.edu/wtp/",
-      "description": "Four-week summer program for female students in engineering and CS."
-    },
-    {
-      "title": "Scholar Tree",
-      "type": "scholarship",
-      "deadline": "Seasonal Intake",
-      "link": "https://scholartree.ca/find-scholarships",
-      "description": "Scholarship website for high school students."
-    },
-    {
-      "title": "Scholarships Canada",
-      "type": "scholarship",
-      "deadline": "Seasonal Intake",
-      "link": "https://www.scholarshipscanada.com",
-      "description": "Website that advertises tons of opportunities for high school students constantly."
-    },
-    {
-      "title": "MITES (MIT Introduction to Tech)",
-      "type": "STEM Program",
-      "deadline": "February 1",
-      "link": "https://mites.mit.edu",
-      "description": "Strong math recs needed."
-    },
-    {
-      "title": "RSI (Research Science Institute)",
-      "type": "Research",
-      "deadline": "December 1",
-      "link": "https://www.cee.org/rsi",
-      "description": "Olympiad winners favored."
-    },
-    {
-      "title": "Google Summer of Code",
-      "type": "Coding Intern",
-      "deadline": "April 15",
-      "link": "https://summerofcode.withgoogle.com",
-      "description": "Open-source contributions help."
-    },
-    {
-      "title": "NSF REU",
-      "type": "Research",
-      "deadline": "Varies (Feb-Mar)",
-      "link": "https://www.nsf.gov/crssprgm/reu/",
-      "description": "Contact PIs early."
-    },
-    {
-      "title": "Bank of America Student Leaders",
-      "type": "Business",
-      "deadline": "January 31",
-      "link": "https://www.bankofamerica.com/studentleaders",
-      "description": "Community service focus."
-    },
-    {
-      "title": "Princeton Laboratory Learning Program",
-      "type": "STEM Research",
-      "deadline": "March 15",
-      "link": "https://pllp.princeton.edu",
-      "description": "Requires research proposal."
-    },
-    {
-      "title": "NASA SEES",
-      "type": "STEM",
-      "deadline": "February 28",
-      "link": "https://www.tsgc.utexas.edu/sees/",
-      "description": "Texas residents preferred."
-    },
-    {
-      "title": "Smithsonian Internships",
-      "type": "Various",
-      "deadline": "Varies",
-      "link": "https://internships.si.edu",
-      "description": "Flexible durations."
-    },
-    {
-      "title": "Intel ISEF",
-      "type": "Competition",
-      "deadline": "Varies (Feb)",
-      "link": "https://www.societyforscience.org/isef/",
-      "description": "Start with local science fair."
-    },
-    {
-      "title": "MIT PRIMES-USA",
-      "type": "Math Research",
-      "deadline": "January 15",
-      "link": "https://math.mit.edu/research/highschool/primes/usa/index.php",
-      "description": "Proof skills required."
-    },
-    {
-      "title": "Goldman Sachs Summer Analyst",
-      "type": "Finance",
-      "deadline": "November",
-      "link": "https://www.goldmansachs.com/careers/students/programs/summer",
-      "description": "Target school helps."
-    },
-    {
-      "title": "Microsoft Explore Program",
-      "type": "Tech",
-      "deadline": "January",
-      "link": "https://careers.microsoft.com/students",
-      "description": "Freshmen/sophomores only."
-    },
-    {
-      "title": "Telluride Association Summer Program (TASP)",
-      "type": "Humanities",
-      "deadline": "January 3",
-      "link": "https://www.tellurideassociation.org",
-      "description": "Essays are critical."
-    },
-    {
-      "title": "Clark Scholars Program",
-      "type": "Research",
-      "deadline": "February 15",
-      "link": "https://www.depts.ttu.edu/honors/academicsandenrichment/affiliatedandhighschool/clarks/",
-      "description": "7-week intensive."
-    },
-    {
-      "title": "LaunchX",
-      "type": "Entrepreneurship",
-      "deadline": "March",
-      "link": "https://launchx.com",
-      "description": "Business plan required."
-    },
-    {
-      "title": "CISCO Technical Internship",
-      "type": "Tech",
-      "deadline": "Rolling",
-      "link": "https://jobs.cisco.com",
-      "description": "Networking certs help."
-    },
-    {
-      "title": "NIH Summer Internship",
-      "type": "Biomedical",
-      "deadline": "March 1",
-      "link": "https://www.training.nih.gov",
-      "description": "NIH location required."
-    },
-    {
-      "title": "JPMorgan Chase Winning Women",
-      "type": "Finance",
-      "deadline": "September",
-      "link": "https://careers.jpmorgan.com",
-      "description": "Women-focused."
-    },
-    {
-      "title": "The Concord Review",
-      "type": "Humanities",
-      "deadline": "Rolling",
-      "link": "https://www.tcr.org",
-      "description": "Publish history papers."
-    },
-    {
-      "title": "Meta University",
-      "type": "Tech",
-      "deadline": "February",
-      "link": "https://www.metacareers.com",
-      "description": "Underrepresented groups focus."
-    },
-    {
-      "title": "MIT Lincoln Laboratory Internship",
-      "type": "STEM Research",
-      "deadline": "January",
-      "link": "https://www.ll.mit.edu",
-      "description": "Security clearance needed."
-    },
-    {
-      "title": "NASA OSTEM",
-      "type": "STEM",
-      "deadline": "March",
-      "link": "https://intern.nasa.gov",
-      "description": "Multiple locations."
-    },
-    {
-      "title": "Google STEP",
-      "type": "Tech",
-      "deadline": "December",
-      "link": "https://buildyourfuture.withgoogle.com",
-      "description": "First-years only."
-    },
-    {
-      "title": "Amazon Future Engineer",
-      "type": "Tech",
-      "deadline": "November",
-      "link": "https://www.amazonfutureengineer.com",
-      "description": "Low-income focus."
-    },
-    {
-      "title": "L'Oreal USA Fellowships",
-      "type": "STEM",
-      "deadline": "February",
-      "link": "https://www.loreal.com",
-      "description": "Women in STEM."
-    },
-    {
-      "title": "Columbia Science Honors Program",
-      "type": "STEM",
-      "deadline": "September",
-      "link": "https://www.sciencehonorsprogram.org",
-      "description": "NYC residents only."
-    },
-    {
-      "title": "KPCB Fellows",
-      "type": "Tech",
-      "deadline": "January",
-      "link": "https://www.kleinerperkins.com",
-      "description": "Startup experience helps."
-    },
-    {
-      "title": "Thiel Fellowship",
-      "type": "Entrepreneurship",
-      "deadline": "December",
-      "link": "https://thielfellowship.org",
-      "description": "Supports young entrepreneurs with $100k and mentorship."
-    },
-    {
-      "title": "Knight-Hennessy Scholars",
-      "type": "Grad Fellowship",
-      "deadline": "October",
-      "link": "https://knight-hennessy.stanford.edu",
-      "description": "Provides full funding for graduate study at Stanford University."
-    },
-    {
-      "title": "Rhodes Scholarship",
-      "type": "Grad Fellowship",
-      "deadline": "October",
-      "link": "https://www.rhodeshouse.ox.ac.uk",
-      "description": "$70k per year for studying at Oxford University."
-    },
-    {
-      "title": "Gates Cambridge",
-      "type": "Grad Fellowship",
-      "deadline": "October",
-      "link": "https://www.gatescambridge.org",
-      "description": "Full ride fellowship for graduate students at Cambridge University."
-    },
-    {
-      "title": "Churchill Scholarship",
-      "type": "STEM Grad",
-      "deadline": "November",
-      "link": "https://www.churchillscholarship.org",
-      "description": "$60k funding for STEM graduate study at Cambridge University."
-    },
-    {
-      "title": "Fulbright US Student Program",
-      "type": "Grad/Research",
-      "deadline": "October",
-      "link": "https://us.fulbrightonline.org",
-      "description": "Varies funding for research or teaching abroad in over 120 countries."
-    },
-    {
-      "title": "Marshall Scholarship",
-      "type": "Grad Fellowship",
-      "deadline": "October",
-      "link": "https://www.marshallscholarship.org",
-      "description": "$40k per year for graduate study in the UK."
-    },
-    {
-      "title": "Paul & Daisy Soros Fellowship",
-      "type": "Grad",
-      "deadline": "October",
-      "link": "https://www.pdsoros.org",
-      "description": "$90k funding for graduate students in the USA."
-    },
-    {
-      "title": "Hertz Fellowship",
-      "type": "STEM PhD",
-      "deadline": "October",
-      "link": "https://hertzfoundation.org",
-      "description": "$250k for STEM PhD students in the USA."
-    },
-    {
-      "title": "NSF GRFP",
-      "type": "STEM Grad",
-      "deadline": "October",
-      "link": "https://www.nsfgrfp.org",
-      "description": "$34k per year for STEM graduate students in the USA."
-    }
+
+  // Typewriter effect for placeholder
+  const searchOptions = [
+    'Internships',
+    'Scholarships',
+    'Volunteering',
+    'Research Programs',
+    'Summer Programs',
+    'Grants ',
+    'STEM Opportunities',
+    'Entreprenuership Opportunities'
   ];
 
+  useEffect(() => {
+    let currentIndex = 0;
+    let currentText = '';
+    let isDeleting = false;
+    let typeTimeout;
+
+    const typeWriter = () => {
+      const fullText = `Search for ${searchOptions[currentIndex]}`;
+      
+      if (isDeleting) {
+        currentText = fullText.substring(0, currentText.length - 1);
+      } else {
+        currentText = fullText.substring(0, currentText.length + 1);
+      }
+
+      setPlaceholderText(currentText);
+
+      let typeSpeed = isDeleting ? 50 : 100;
+
+      if (!isDeleting && currentText === fullText) {
+        typeSpeed = 2000; // Pause at end
+        isDeleting = true;
+      } else if (isDeleting && currentText === '') {
+        isDeleting = false;
+        currentIndex = (currentIndex + 1) % searchOptions.length;
+        typeSpeed = 200;
+      }
+
+      typeTimeout = setTimeout(typeWriter, typeSpeed);
+    };
+
+    // Only run typewriter when not focused on input
+    if (!document.activeElement || document.activeElement.className !== 'search-input') {
+      typeWriter();
+    }
+
+    return () => clearTimeout(typeTimeout);
+  }, []);
+
+  // Your opportunities data - you'll need to add this back from your original file
+  useEffect(() => {
+    // Method 2: Direct import from src folder
+    setOpportunities(opportunitiesData);
+  }, []);
   // Type color mapping
   const typeColors = {
     'internship': '#3B82F6',
@@ -983,6 +659,17 @@ function App() {
     window.open(link, '_blank');
   };
 
+  const handleInputFocus = () => {
+    setPlaceholderText('Search for opportunities...');
+  };
+
+  const handleInputBlur = () => {
+    if (!searchQuery) {
+      // Restart typewriter effect when input loses focus and is empty
+      setPlaceholderText('');
+    }
+  };
+
   // Click outside to close results
   useEffect(() => {
     const handleClickOutside = (e) => {
@@ -997,6 +684,18 @@ function App() {
 
   return (
     <>
+    <Helmet>
+      <link rel="icon" href={faviconImage} />
+    </Helmet>
+    <style>{globalStyles}</style>
+    <div style={{ 
+      width: '100vw', 
+      minHeight: '100vh', 
+      background: '#000000',
+      position: 'relative',
+      margin: 0,
+      padding: 0
+    }}></div>
       <style>{globalStyles}</style>
       <div style={{ 
         width: '100vw', 
@@ -1009,12 +708,9 @@ function App() {
         {/* Navigation */}
         <nav className="nav-container">
           <div className="nav-links">
-            <a href="https://www.spot-to.com/summerprogram.html">SUMMER</a>
-            <a href="https://www.spot-to.com/volunteer.html">VOLUNTEER</a>
-            <a href="https://www.spot-to.com/Internship.html" target="_blank">INTERNSHIPS</a>
-            <a href="https://www.spot-to.com/govg.html">GRANTS</a>
-            <a href="https://www.spot-to.com/scholar.html">SCHOLARSHIPS</a>
-            <a href="https://www.spot-to.com/blog.html" target="_blank">BLOG</a>
+          <a href="#about">ABOUT</a>
+          <a href="#contact">CONTACT</a>
+          <a href="blog.html" target="_blank">BLOG</a>
           </div>
         </nav>
 
@@ -1033,9 +729,9 @@ function App() {
 
           {/* Content Below Orb */}
           <div className="text-content">
-            <h1>Connect to Volunteering Opportunities & More</h1>
+            <h1>Volunteering, Internships, and Beyond</h1>
+            <h1> for High School Students</h1>
             <p><i><b>Affiliated with Bloor Collegiate Institute</b></i></p>
-            <h2>Internships • Volunteering • Scholarships</h2>
 
             {/* Search Bar */}
             <div className="search-container">
@@ -1043,10 +739,12 @@ function App() {
                 <input 
                   type="text" 
                   className="search-input"
-                  placeholder="Search for opportunities..."
+                  placeholder={placeholderText}
                   value={searchQuery}
                   onChange={handleSearchInput}
                   onKeyPress={handleKeyPress}
+                  onFocus={handleInputFocus}
+                  onBlur={handleInputBlur}
                 />
                 <span className="search-icon">
                   <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#999" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -1081,6 +779,92 @@ function App() {
                   )}
                 </div>
               </div>
+            </div>
+          </div>
+
+          {/* About Section */}
+        {/* About Section - Add this right after your search container closing div */}
+        <div className="about-section" id="about">
+          <div className="about-content">
+            <div className="about-text">
+              <h2>About SpotTO</h2>
+              <p>
+                SpotTO is a centralized hub or the "Spot" for students to find volunteering, internships, scholarships, grants, our blog and more!
+              </p>
+              <br></br>
+              <p>
+                To access the services simply search for a specific opportunity (eg. Sick Kids Hospital) or a type (Volunteer, Internship, Scholarship)
+              </p>
+              <br></br>
+              <p>
+                Founded in partnership with Bloor Collegiate Institute, we understand the challenges students 
+                face when searching for meaningful experiences. Our mission is to connect ambitious young students 
+                with hundreds of opportunities  
+              </p>
+            </div>
+            
+            {/* AI Window Design - EXACT replica */}
+            <div className="about-image">
+              <div className="ai-window">
+                {/* Small header text - EXACT positioning */}
+                <div className="ai-small-header">Student Opportunities</div>
+                
+                {/* Main headline - EXACT styling */}
+                <h1 className="ai-headline">
+                  Enhance your<br/>
+                   productivity.
+                </h1>
+                
+                {/* YOUR IMAGE - Replace with your actual image */}
+                <img 
+                  src={spotImage}
+                  alt="This should work" 
+                  className="ai-main-image"
+                />
+                
+            
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        </div>
+
+        {/* Contact Section */}
+        <div className="contact-section" id="contact">
+          <div className="contact-content">
+            <h2>Get in Touch</h2>
+            <div className="contact-info">
+              <div className="contact-item">
+                <svg className="contact-icon" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                </svg>
+                <div className="contact-label">Email</div>
+                <div className="contact-value">
+                  <a href="mailto:info@spotto.ca">spot.to.biz@gmail.com</a>
+                </div>
+              </div>
+              
+              <div className="contact-item">
+                <svg className="contact-icon" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                </svg>
+                <div className="contact-label">Location</div>
+                <div className="contact-value">Toronto, Ontario</div>
+              </div>
+              
+              <div className="contact-item">
+  <svg className="contact-icon" fill="currentColor" viewBox="0 0 24 24">
+    <path d="M20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h4l4 4 4-4h4c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/>
+  </svg>
+                <div className="contact-label">Feedback?</div>
+                <div className="contact-value"><a href="https://docs.google.com/forms/d/e/1FAIpQLSf8rAsUGypAwW9lltC5UL2627HOXmn7ypdRC89ROah5N6Vcng/viewform?usp=header">Click Here!</a></div>
+              </div>
+            </div>
+            
+            <div className="footer-text">
+              © 2025 SpotTO. Students realizing true potential.
             </div>
           </div>
         </div>
