@@ -1,8 +1,8 @@
 {
   "name": "orb",
   "version": "1.0.0",
-  "homepage": "https://Leo10901.github.io/SpotTO",
-  "description": "",
+  "homepage": "https://spot-to.com",
+  "description": "A centralized platform for high school students in Toronto  to find : volunteering, internships,research opportunities, STEM, grants, scholarships, and our blog!",
   "main": "index.js",
   "directories": {
     "doc": "docs"

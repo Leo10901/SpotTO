@@ -5,6 +5,8 @@ import opportunitiesData from './opportunities.json';
 import spotImage from './test.jpg';
 import { Helmet } from 'react-helmet';
 import faviconImage from './favicon.ico';
+import faviconPng from './favicon-32x32.png';
+
 
 
 
@@ -34,7 +36,6 @@ const globalStyles = `
     width: 100%;
     height: 100%;
   }
-
   .nav-container {
     width: 100%;
     z-index: 1000;
@@ -63,7 +64,20 @@ const globalStyles = `
   .nav-links a:hover {
     background: rgba(255, 255, 255, 0.1);
   }
-
+  .Warning {
+    width: 100%;
+    z-index: 1000;
+    padding: 30px;
+    display: flex;
+    align-items:right
+    text-decoration: none;
+    color: white !important;
+    transition: color 0.1s ease;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+}
   .main-content {
     display: flex;
     flex-direction: column;
@@ -601,6 +615,7 @@ function App() {
 
   // Your opportunities data - you'll need to add this back from your original file
   useEffect(() => {
+    
     // Method 2: Direct import from src folder
     setOpportunities(opportunitiesData);
   }, []);
@@ -686,8 +701,10 @@ function App() {
   return (
     <>
     <Helmet>
-  <link rel="icon" href={faviconImage} />
+  <link rel="icon" href={`${faviconImage}?v=2`} />
+  <link rel="icon" type="image/png" sizes="32x32" href={`${faviconImage}?v=2`} />s
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PN39F2Z66M"></script>
+  <link rel="apple-touch-icon" sizes="180x180" href={`${faviconPng}?v=2`} />
   <script>
     {`
       window.dataLayer = window.dataLayer || [];
@@ -711,6 +728,10 @@ function App() {
       }}>
         {/* Navigation */}
         <nav className="nav-container">
+          <div className="Warning">
+        <p>* Most Compatible with Chrome *</p>
+
+        </div>
           <div className="nav-links">
           <a href="#about">ABOUT</a>
           <a href="#contact">CONTACT</a>
@@ -846,7 +867,7 @@ function App() {
                 </svg>
                 <div className="contact-label">Email</div>
                 <div className="contact-value">
-                  <a href="mailto:info@spotto.ca">spot.to.biz@gmail.com</a>
+                  <a href="mailto:spot.to.biz@gmail.com">spot.to.biz@gmail.com</a>
                 </div>
               </div>
               
