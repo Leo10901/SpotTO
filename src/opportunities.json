@@ -56,6 +56,27 @@
     "description": "Help with animal care, education, and conservation programs."
   },
   {
+    "title": "Sick Kids Hospital",
+    "type": "volunteer",
+    "deadline": "March 20th",
+    "link": "https://www.sickkids.ca/en/careers-volunteer/volunteering/volunteer-programs/",
+    "description": "Volunteer at Toronto's largest children's hospital in various roles."
+  },
+  {
+    "title": "St. Joseph Hospital",
+    "type": "volunteer",
+    "deadline": "Ongoing",
+    "link": "https://www.volgistics.com/appform/2122758960",
+    "description": "Support patients and staff in a healthcare setting."
+  },
+  {
+    "title": "Micheal Garron Hospital",
+    "type": "volunteer",
+    "deadline": "Ongoing",
+    "link": "https://www.tehn.ca/careers-volunteering/volunteering/student-volunteer-program",
+    "description": "Hospital volunteer program with various support roles."
+  },
+  {
     "title": "Daily Bread Food Bank",
     "type": "volunteer",
     "deadline": "Ongoing",
@@ -168,13 +189,6 @@
     "description": "Lead global open innovation challenges from within a dynamic team."
   },
   {
-    "title": "Harvard Ventures-TECH Summer Program",
-    "type": "summer",
-    "deadline": "Rolling Admissions",
-    "link": "https://tech.seas.harvard.edu/summer/apply",
-    "description": "Join Harvard's summer tech program to learn from experts and work on innovative projects."
-  },
-  {
     "title": "Yale Young Global Scholars",
     "type": "summer",
     "deadline": "January 14th",
@@ -187,20 +201,6 @@
     "deadline": "January 8",
     "link": "https://summer.jhu.edu/programs-courses/pre-college-programs/",
     "description": "Rigorous summer courses for high school students in STEM and humanities."
-  },
-  {
-    "title": "Dev Degree by Shopify",
-    "type": "summer",
-    "deadline": "September 15",
-    "link": "https://devdegree.ca/",
-    "description": "Four-year program with a paid internship at Shopify and a CS degree."
-  },
-  {
-    "title": "Amazon Future Engineer Scholarship Program",
-    "type": "summer",
-    "deadline": "Seasonal Intake",
-    "link": "https://www.amazonfutureengineer.com/scholarships",
-    "description": "Scholarships and internship opportunities for students in CS or engineering."
   },
   
   {
@@ -253,27 +253,7 @@
     "link": "https://www.ontario.ca/page/start-summer-company-students",
     "description": "Learn to run your own student business with mentorship and support."
   },
-  {
-    "title": "Sick Kids Hospital",
-    "type": "volunteer",
-    "deadline": "March 20th",
-    "link": "https://www.sickkids.ca/en/careers-volunteer/volunteering/volunteer-programs/",
-    "description": "Volunteer at Toronto's largest children's hospital in various roles."
-  },
-  {
-    "title": "St. Joseph Hospital",
-    "type": "volunteer",
-    "deadline": "Ongoing",
-    "link": "https://www.volgistics.com/appform/2122758960",
-    "description": "Support patients and staff in a healthcare setting."
-  },
-  {
-    "title": "Micheal Garron Hospital",
-    "type": "volunteer",
-    "deadline": "Ongoing",
-    "link": "https://www.tehn.ca/careers-volunteering/volunteering/student-volunteer-program",
-    "description": "Hospital volunteer program with various support roles."
-  },
+  
   {
     "title": "Volunteering in India",
     "type": "volunteer",
