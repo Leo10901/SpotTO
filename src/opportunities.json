@@ -1,4 +1,88 @@
 [
+  {
+    "title": "University of Toronto Camp Counsellor",
+    "type": "summer",
+    "deadline": "Seasonal Intake",
+    "link": "https://www.uoft.ca/summer-camps",
+    "description": "Lead and inspire campers at UofT's summer camps, develop leadership skills."
+  },
+ {
+    "title": "SHAD Canada",
+    "type": "summer",
+    "deadline": "Seasonal Intake",
+    "link": "https://www.shad.ca/apply/",
+    "description": "Summer enrichment program for high-achieving Canadian students in STEM and business."
+  },
+  {
+    "title": "Elections Canada",
+    "type": "volunteer",
+    "deadline": "Election Dependant",
+    "link": "https://www.elections.ca/scripts/vis/FindED?L=e&ED=&EV=&EV_TYPE=&PC=&Prov=&ProvID=&MapID=&QID=-1&PageID=20&TPageID=33",
+    "description": "Volunteer in federal elections and get paid above minimum wage."
+  },
+  {
+    "title": "Art Gallery of Ontario",
+    "type": "volunteer",
+    "deadline": "Seasonal Intake",
+    "link": "https://ago.ca/volunteer",
+    "description": "Volunteer in various departments at the AGO and support art events."
+  },
+  {
+    "title": "YMCA of Greater Toronto",
+    "type": "volunteer",
+    "deadline": "Ongoing",
+    "link": "https://ymcagta.org/join-our-team/volunteer-with-the-ymca",
+    "description": "Volunteer in youth programs, fitness, or community outreach across GTA."
+  },
+  {
+    "title": "Toronto Public Library",
+    "type": "volunteer",
+    "deadline": "Ongoing",
+    "link": "https://www.torontopubliclibrary.ca/about-the-library/volunteer/",
+    "description": "Support literacy and learning at Toronto library branches."
+  },
+  {
+    "title": "Royal Ontario Museum",
+    "type": "volunteer",
+    "deadline": "Seasonal Intake",
+    "link": "https://www.rom.on.ca/en/join-us/volunteer",
+    "description": "Volunteer at the ROM in guided tours and educational programs."
+  },
+  {
+    "title": "Toronto Zoo",
+    "type": "volunteer",
+    "deadline": "Multiple Intakes",
+    "link": "https://www.torontozoo.com/tz/volunteer",
+    "description": "Help with animal care, education, and conservation programs."
+  },
+  {
+    "title": "Daily Bread Food Bank",
+    "type": "volunteer",
+    "deadline": "Ongoing",
+    "link": "https://www.dailybread.ca/volunteer/",
+    "description": "Help sort, distribute food, or assist in outreach programs."
+  },
+  {
+    "title": "Volunteer Toronto",
+    "type": "volunteer",
+    "deadline": "Ongoing",
+    "link": "https://www.volunteertoronto.ca/networking/default.asp",
+    "description": "Portal for many more Toronto volunteer opportunities."
+  },
+  {
+    "title": "RBC Summer Tech Labs Program",
+    "type": "internship",
+    "deadline": "Seasonal Intake",
+    "link": "https://jobs.rbc.com/ca/en/amplify",
+    "description": "Eight-week paid internship with workshops and mentoring at RBC."
+  },
+  {
+    "title": "TKS",
+    "type": "internship",
+    "deadline": "Ongoing",
+    "link": "https://tks.softr.app/tks2526waitlist",
+    "description": "Accelerator program for ambitious young people."
+  },
 {
     "title": "2025 Belmont Innovation Labs Fall",
     "type": "internship",
@@ -118,13 +202,21 @@
     "link": "https://www.amazonfutureengineer.com/scholarships",
     "description": "Scholarships and internship opportunities for students in CS or engineering."
   },
+  
   {
-    "title": "SHAD Canada",
-    "type": "summer",
-    "deadline": "Seasonal Intake",
-    "link": "https://www.shad.ca/apply/",
-    "description": "Summer enrichment program for high-achieving Canadian students in STEM and business."
-  },
+    "title": "Institute for Computing in Research – High School Research Internships",
+    "type": "internship",
+    "deadline": "Varies; summer + during the year internships",
+    "link": "https://computinginresearch.org/research-internships/",
+    "description": "High school students do research projects with mentors and get stipends with a focus on programming and research skills"
+   },
+   {
+    "title": "Small World Initiative – Remote Internship Program",
+    "type": "internship",
+    "deadline": "Rolling basis",
+    "link": "https://www.smallworldinitiative.org/join-our-team",
+    "description": "Opportunity for students to volunteer/ intern remotely on education/global health challenges, unpaid yet experimental."
+   },
   {
     "title": "Meta Summer Academy",
     "type": "summer",
@@ -132,13 +224,7 @@
     "link": "https://metasummeracademy.com/",
     "description": "Explore tech and product development careers at Meta with mentorship and hands-on experience."
   },
-  {
-    "title": "University of Toronto Camp Counsellor",
-    "type": "summer",
-    "deadline": "Seasonal Intake",
-    "link": "https://www.uoft.ca/summer-camps",
-    "description": "Lead and inspire campers at UofT's summer camps, develop leadership skills."
-  },
+
   {
     "title": "The Rockefeller University Summer Science Research Program",
     "type": "summer",
@@ -195,76 +281,7 @@
     "link": "https://www.volunteeringindia.com/blog/best-volunteering-programs-in-india-for-high-school-students/#:~:text=Street%20Children%20Volunteering%20in%20India,-This%20is%20undoubt",
     "description": "Work with underprivileged children in India through education and support."
   },
-  {
-    "title": "Elections Canada",
-    "type": "volunteer",
-    "deadline": "Election Dependant",
-    "link": "https://www.elections.ca/scripts/vis/FindED?L=e&ED=&EV=&EV_TYPE=&PC=&Prov=&ProvID=&MapID=&QID=-1&PageID=20&TPageID=33",
-    "description": "Volunteer in federal elections and get paid above minimum wage."
-  },
-  {
-    "title": "Art Gallery of Ontario",
-    "type": "volunteer",
-    "deadline": "Seasonal Intake",
-    "link": "https://ago.ca/volunteer",
-    "description": "Volunteer in various departments at the AGO and support art events."
-  },
-  {
-    "title": "YMCA of Greater Toronto",
-    "type": "volunteer",
-    "deadline": "Ongoing",
-    "link": "https://ymcagta.org/join-our-team/volunteer-with-the-ymca",
-    "description": "Volunteer in youth programs, fitness, or community outreach across GTA."
-  },
-  {
-    "title": "Toronto Public Library",
-    "type": "volunteer",
-    "deadline": "Ongoing",
-    "link": "https://www.torontopubliclibrary.ca/about-the-library/volunteer/",
-    "description": "Support literacy and learning at Toronto library branches."
-  },
-  {
-    "title": "Royal Ontario Museum",
-    "type": "volunteer",
-    "deadline": "Seasonal Intake",
-    "link": "https://www.rom.on.ca/en/join-us/volunteer",
-    "description": "Volunteer at the ROM in guided tours and educational programs."
-  },
-  {
-    "title": "Toronto Zoo",
-    "type": "volunteer",
-    "deadline": "Multiple Intakes",
-    "link": "https://www.torontozoo.com/tz/volunteer",
-    "description": "Help with animal care, education, and conservation programs."
-  },
-  {
-    "title": "Daily Bread Food Bank",
-    "type": "volunteer",
-    "deadline": "Ongoing",
-    "link": "https://www.dailybread.ca/volunteer/",
-    "description": "Help sort, distribute food, or assist in outreach programs."
-  },
-  {
-    "title": "Volunteer Toronto",
-    "type": "volunteer",
-    "deadline": "Ongoing",
-    "link": "https://www.volunteertoronto.ca/networking/default.asp",
-    "description": "Portal for many more Toronto volunteer opportunities."
-  },
-  {
-    "title": "RBC Summer Tech Labs Program",
-    "type": "internship",
-    "deadline": "Seasonal Intake",
-    "link": "https://jobs.rbc.com/ca/en/amplify",
-    "description": "Eight-week paid internship with workshops and mentoring at RBC."
-  },
-  {
-    "title": "TKS",
-    "type": "internship",
-    "deadline": "Ongoing",
-    "link": "https://tks.softr.app/tks2526waitlist",
-    "description": "Accelerator program for ambitious young people."
-  },
+  
   {
     "title": "Ladder Internships",
     "type": "internship",
@@ -448,20 +465,6 @@
     "description": "Proof skills required."
   },
   {
-    "title": "Goldman Sachs Summer Analyst",
-    "type": "Finance",
-    "deadline": "November",
-    "link": "https://www.goldmansachs.com/careers/students/programs/summer",
-    "description": "Target school helps."
-  },
-  {
-    "title": "Microsoft Explore Program",
-    "type": "Tech",
-    "deadline": "January",
-    "link": "https://careers.microsoft.com/students",
-    "description": "Freshmen/sophomores only."
-  },
-  {
     "title": "Telluride Association Summer Program (TASP)",
     "type": "Humanities",
     "deadline": "January 3",
@@ -496,13 +499,7 @@
     "link": "https://www.training.nih.gov",
     "description": "NIH location required."
   },
-  {
-    "title": "JPMorgan Chase Winning Women",
-    "type": "Finance",
-    "deadline": "September",
-    "link": "https://careers.jpmorgan.com",
-    "description": "Women-focused."
-  },
+
   {
     "title": "The Concord Review",
     "type": "Humanities",
@@ -532,18 +529,11 @@
     "description": "Multiple locations."
   },
   {
-    "title": "Google STEP",
-    "type": "Tech",
-    "deadline": "December",
-    "link": "https://buildyourfuture.withgoogle.com",
-    "description": "First-years only."
-  },
-  {
     "title": "Amazon Future Engineer",
     "type": "Tech",
     "deadline": "November",
     "link": "https://www.amazonfutureengineer.com",
-    "description": "Low-income focus."
+    "description": ""
   },
   {
     "title": "L'Oreal USA Fellowships",
@@ -551,13 +541,6 @@
     "deadline": "February",
     "link": "https://www.loreal.com",
     "description": "Women in STEM."
-  },
-  {
-    "title": "Columbia Science Honors Program",
-    "type": "STEM",
-    "deadline": "September",
-    "link": "https://www.sciencehonorsprogram.org",
-    "description": "NYC residents only."
   },
   {
     "title": "KPCB Fellows",
@@ -574,66 +557,10 @@
     "description": "Supports young entrepreneurs with $100k and mentorship."
   },
   {
-    "title": "Knight-Hennessy Scholars",
-    "type": "Grad Fellowship",
-    "deadline": "October",
-    "link": "https://knight-hennessy.stanford.edu",
-    "description": "Provides full funding for graduate study at Stanford University."
-  },
-  {
     "title": "Rhodes Scholarship",
     "type": "Grad Fellowship",
     "deadline": "October",
     "link": "https://www.rhodeshouse.ox.ac.uk",
     "description": "$70k per year for studying at Oxford University."
   },
-  {
-    "title": "Gates Cambridge",
-    "type": "Grad Fellowship",
-    "deadline": "October",
-    "link": "https://www.gatescambridge.org",
-    "description": "Full ride fellowship for graduate students at Cambridge University."
-  },
-  {
-    "title": "Churchill Scholarship",
-    "type": "STEM Grad",
-    "deadline": "November",
-    "link": "https://www.churchillscholarship.org",
-    "description": "$60k funding for STEM graduate study at Cambridge University."
-  },
-  {
-    "title": "Fulbright US Student Program",
-    "type": "Grad/Research",
-    "deadline": "October",
-    "link": "https://us.fulbrightonline.org",
-    "description": "Varies funding for research or teaching abroad in over 120 countries."
-  },
-  {
-    "title": "Marshall Scholarship",
-    "type": "Grad Fellowship",
-    "deadline": "October",
-    "link": "https://www.marshallscholarship.org",
-    "description": "$40k per year for graduate study in the UK."
-  },
-  {
-    "title": "Paul & Daisy Soros Fellowship",
-    "type": "Grad",
-    "deadline": "October",
-    "link": "https://www.pdsoros.org",
-    "description": "$90k funding for graduate students in the USA."
-  },
-  {
-    "title": "Hertz Fellowship",
-    "type": "STEM PhD",
-    "deadline": "October",
-    "link": "https://hertzfoundation.org",
-    "description": "$250k for STEM PhD students in the USA."
-  },
-  {
-    "title": "NSF GRFP",
-    "type": "STEM Grad",
-    "deadline": "October",
-    "link": "https://www.nsfgrfp.org",
-    "description": "$34k per year for STEM graduate students in the USA."
-  }
 ]
