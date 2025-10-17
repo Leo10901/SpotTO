@@ -62,7 +62,7 @@ const globalStyles = `
   }
 
   .nav-links a:hover {
-    background: rgba(255, 255, 255, 0.1);
+    opacity: 0.8;
   }
   .Warning {
     width: 100%;
@@ -112,6 +112,7 @@ const globalStyles = `
     font-stretch: condensed;
     line-height: 1;
   }
+
 
   .text-content {
     color: white;
@@ -343,7 +344,7 @@ const globalStyles = `
   align-items: center;
 }
 
-/* EXACT AI Window Design */
+
 .ai-window {
   position: relative;
   width: 100%;
@@ -367,10 +368,7 @@ const globalStyles = `
   font-family: 'Inter', sans-serif;
 }
 
-/* Main headline - EXACT typography match */
 
-
-/* Your image - fills entire container */
 .ai-main-image {
   position: absolute;
   top: 0;
@@ -384,9 +382,7 @@ const globalStyles = `
 }
 
 
-/* Remove gradient overlay - image provides the gradient */
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .about-content {
     flex-direction: column;
@@ -535,6 +531,7 @@ const globalStyles = `
             .contact-info {
                 flex-direction: column;
                 gap: 30px;
+                justify-content: center;
             }
 
             .about-text h2, .contact-content h2 {
@@ -594,7 +591,7 @@ function App() {
       let typeSpeed = isDeleting ? 50 : 100;
 
       if (!isDeleting && currentText === fullText) {
-        typeSpeed = 2000; // Pause at end
+        typeSpeed = 2000; 
         isDeleting = true;
       } else if (isDeleting && currentText === '') {
         isDeleting = false;
@@ -605,7 +602,7 @@ function App() {
       typeTimeout = setTimeout(typeWriter, typeSpeed);
     };
 
-    // Only run typewriter when not focused on input
+  
     if (!document.activeElement || document.activeElement.className !== 'search-input') {
       typeWriter();
     }
@@ -676,7 +673,7 @@ function App() {
   };
 
   const handleInputFocus = () => {
-    setPlaceholderText('Search for opportunities...');
+    setPlaceholderText('Search for opportunities');
   };
 
   const handleInputBlur = () => {
@@ -729,7 +726,7 @@ function App() {
         {/* Navigation */}
         <nav className="nav-container">
           <div className="Warning">
-        <p>* Most Compatible with Chrome *</p>
+        
 
         </div>
           <div className="nav-links">
@@ -814,18 +811,26 @@ function App() {
             <div className="about-text">
               <h2>About SpotTO</h2>
               <p>
-                SpotTO is a centralized hub or the "Spot" for students to find volunteering, internships, scholarships, grants, our blog and more!
+                SpotTO is a centralized hub or the "Spot" for students to find volunteering, internships, scholarships, grants, our blog and more! <b>(This website is also optimized for Google Chrome.)</b>
+              </p>
+              
+              <br />
+              <p>
+                To access the services simply search for a specific opportunity <b>(eg. Sick Kids Hospital)</b> or a type <b>(Volunteer, Internship, Scholarship)</b>
               </p>
               <br />
               <p>
-                To access the services simply search for a specific opportunity (eg. Sick Kids Hospital) or a type (Volunteer, Internship, Scholarship)
-              </p>
-              <br />
-              <p>
-                Founded in partnership with Bloor Collegiate Institute, we understand the challenges students 
+                Founded with help from Bloor Collegiate Institute, we understand the challenges students 
                 face when searching for meaningful experiences. Our mission is to connect ambitious young students 
-                with hundreds of opportunities  
+                with hundreds of opportunities!
               </p>
+              <div className="link-white">
+  <a href="https://www.freepik.com/free-photo/woman-winks-eye-sticks-out-tongue-has-fun-while-walking-urban-setting-dressed-fashionable-pink-jacket-has-optimistic-mood_19658695.htm" style={{color: 'white'}}>
+    Image by wayhomestudio on Freepik
+  </a>
+</div>
+            
+            
             </div>
             
             {/* AI Window Design - EXACT replica */}
@@ -837,7 +842,7 @@ function App() {
                 {/* Main headline - EXACT styling */}
                 <h1 className="ai-headline">
                   Enhance your<br />
-                   productivity.
+                   search.
                 </h1>
                 
                 {/* YOUR IMAGE - Replace with your actual image */}
@@ -860,6 +865,7 @@ function App() {
         <div className="contact-section" id="contact">
           <div className="contact-content">
             <h2>Get in Touch</h2>
+            
             <div className="contact-info">
               <div className="contact-item">
                 <svg className="contact-icon" fill="currentColor" viewBox="0 0 24 24">
@@ -889,7 +895,7 @@ function App() {
             </div>
             
             <div className="footer-text">
-              © 2025 SpotTO. Students realizing true potential.
+              © 2025 SpotTO.
             </div>
           </div>
         </div>

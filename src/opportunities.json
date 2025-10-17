@@ -1,137 +1,4 @@
 [
-{
-    "title": "2025 Belmont Innovation Labs Fall",
-    "type": "internship",
-    "deadline": "Seasonal Intake",
-    "link": "https://belmont.csod.com/ux/ats/careersite/10/home/requisition/4160?c=belmont&sq=req4160",
-    "description": "Supports civic governance solutions and changemaker leadership."
-  },
-  {
-    "title": "2025 Regional Civic Tech Innovation Challenge (Asia Pacific)",
-    "type": "internship",
-    "deadline": "Seasonal Intake",
-    "link": "https://belmont.csod.com/ux/ats/careersite/10/home/requisition/4160?c=belmont&sq=req4160",
-    "description": "Support civic governance solutions and changemaker leadership."
-  },
-  {
-    "title": "2025 AI & Neurotech Grants – Up to $300K",
-    "type": "grant",
-    "deadline": "June 30 2025",
-    "link": "https://foresight.org/request-for-proposals/",
-    "description": "Open call for proposals in cutting-edge brain tech and AI research."
-  },
-  {
-    "title": "2025 Partner for Global Fund for Children (GFC)",
-    "type": "internship",
-    "deadline": "June 30 2025",
-    "link": "https://globalfundforchildren.my.site.com/GFCGrants/s/expression-of-interest?language=en_US",
-    "description": "Join a global network supporting youth-led, community-based organizations."
-  },
-  {
-    "title": "2025 Postdoctoral Fellowships in Science Communication – South Africa",
-    "type": "internship",
-    "deadline": "Seasonal Intake",
-    "link": "https://www0.sun.ac.za/crest/wp-content/uploads/2024/10/CREST-Postdoc-Application-2024.pdf",
-    "description": "Advance civic science at Stellenbosch University in 2025."
-  },
-  {
-    "title": "2025 Barak-Meghna River Basin Storytellers Fellowship",
-    "type": "internship",
-    "deadline": "June 20 2025",
-    "link": "https://forms.gle/rG2r1KbyfW6qLo3y6",
-    "description": "Support storytelling and environmental justice across South Asia."
-  },
-  {
-    "title": "2025 The Leaders Summit 2025 – 20-100% Fee Waivers Available",
-    "type": "volunteer",
-    "deadline": "Dec 1 2025",
-    "link": "https://isldofficial.com/washington-usa-register/",
-    "description": "Build leadership capacity and global networks for impact."
-  },
-  {
-    "title": "2025 UNESCO International Literacy Prizes",
-    "type": "grant",
-    "deadline": "June 27 2025",
-    "link": "https://unesco-2023.limesurvey.net/913298?lang=en",
-    "description": "Recognizing innovative and impactful literacy projects worldwide."
-  },
-  {
-    "title": "2025 Teachers' Leadership Institute Canada (Fully Funded)",
-    "type": "volunteer",
-    "deadline": "June 16 2025",
-    "link": "https://www.akfc.ca/get-involved/teachers-leadership-institute/",
-    "description": "Global citizenship education program for outstanding educators."
-  },
-  {
-    "title": "2025 AmplifyChange Opportunity Grant",
-    "type": "grant",
-    "deadline": "16 June 2025",
-    "link": "https://amplifychange.org/grant-type/opportunity-grant/",
-    "description": "Up to £75,000 to strengthen grassroots SRHR advocacy."
-  },
-  {
-    "title": "2025 H2HC Prizes for Innovation – $300K",
-    "type": "grant",
-    "deadline": "July 1 2025",
-    "link": "https://justfund.us",
-    "description": "Advancing youth health equity through food and nutrition solutions."
-  },
-  {
-    "title": "2025 Challenge Program Officer – MIT Solve",
-    "type": "internship",
-    "deadline": "Seasonal Intake",
-    "link": "https://careers.peopleclick.com/careerscp/client_mit/external/jobDetails/jobDetail.html?jobPostId=32370&localeCode=en-us",
-    "description": "Lead global open innovation challenges from within a dynamic team."
-  },
-  {
-    "title": "Harvard Ventures-TECH Summer Program",
-    "type": "summer",
-    "deadline": "Rolling Admissions",
-    "link": "https://tech.seas.harvard.edu/summer/apply",
-    "description": "Join Harvard's summer tech program to learn from experts and work on innovative projects."
-  },
-  {
-    "title": "Yale Young Global Scholars",
-    "type": "summer",
-    "deadline": "January 14th",
-    "link": "https://globalscholars.yale.edu/how-to-apply",
-    "description": "Academic enrichment program at Yale for outstanding high school students from around the world."
-  },
-  {
-    "title": "Johns Hopkins Pre-College Summer Program",
-    "type": "summer",
-    "deadline": "January 8",
-    "link": "https://summer.jhu.edu/programs-courses/pre-college-programs/",
-    "description": "Rigorous summer courses for high school students in STEM and humanities."
-  },
-  {
-    "title": "Dev Degree by Shopify",
-    "type": "summer",
-    "deadline": "September 15",
-    "link": "https://devdegree.ca/",
-    "description": "Four-year program with a paid internship at Shopify and a CS degree."
-  },
-  {
-    "title": "Amazon Future Engineer Scholarship Program",
-    "type": "summer",
-    "deadline": "Seasonal Intake",
-    "link": "https://www.amazonfutureengineer.com/scholarships",
-    "description": "Scholarships and internship opportunities for students in CS or engineering."
-  },
-  {
-    "title": "SHAD Canada",
-    "type": "summer",
-    "deadline": "Seasonal Intake",
-    "link": "https://www.shad.ca/apply/",
-    "description": "Summer enrichment program for high-achieving Canadian students in STEM and business."
-  },
-  {
-    "title": "Meta Summer Academy",
-    "type": "summer",
-    "deadline": "Seasonal Intake",
-    "link": "https://metasummeracademy.com/",
-    "description": "Explore tech and product development careers at Meta with mentorship and hands-on experience."
-  },
   {
     "title": "University of Toronto Camp Counsellor",
     "type": "summer",
@@ -139,61 +6,12 @@
     "link": "https://www.uoft.ca/summer-camps",
     "description": "Lead and inspire campers at UofT's summer camps, develop leadership skills."
   },
-  {
-    "title": "The Rockefeller University Summer Science Research Program",
+ {
+    "title": "SHAD Canada",
     "type": "summer",
     "deadline": "Seasonal Intake",
-    "link": "https://www.rockefeller.edu/outreach/ssrp/",
-    "description": "Summer research program for students interested in biomedical sciences."
-  },
-  {
-    "title": "Columbia Writing Program",
-    "type": "summer",
-    "deadline": "Course Starts July 21-31",
-    "link": "https://precollege.sps.columbia.edu/programs/summer-programs/columbia-writing-academy-summer",
-    "description": "Two-week intensive writing course at Columbia for university or college prep."
-  },
-  {
-    "title": "Nokia Summer Internship",
-    "type": "summer",
-    "deadline": "Seasonal Intake",
-    "link": "https://www.nokia.com/about-us/careers/student-and-graduate-opportunities/canada/future-tech-summer-internship/",
-    "description": "Eight-week internship with Nokia engineering teams."
-  },
-  {
-    "title": "Summer Company Ontario",
-    "type": "grant",
-    "deadline": "Seasonal Intake",
-    "link": "https://www.ontario.ca/page/start-summer-company-students",
-    "description": "Learn to run your own student business with mentorship and support."
-  },
-  {
-    "title": "Sick Kids Hospital",
-    "type": "volunteer",
-    "deadline": "March 20th",
-    "link": "https://www.sickkids.ca/en/careers-volunteer/volunteering/volunteer-programs/",
-    "description": "Volunteer at Toronto's largest children's hospital in various roles."
-  },
-  {
-    "title": "St. Joseph Hospital",
-    "type": "volunteer",
-    "deadline": "Ongoing",
-    "link": "https://www.volgistics.com/appform/2122758960",
-    "description": "Support patients and staff in a healthcare setting."
-  },
-  {
-    "title": "Micheal Garron Hospital",
-    "type": "volunteer",
-    "deadline": "Ongoing",
-    "link": "https://www.tehn.ca/careers-volunteering/volunteering/student-volunteer-program",
-    "description": "Hospital volunteer program with various support roles."
-  },
-  {
-    "title": "Volunteering in India",
-    "type": "volunteer",
-    "deadline": "Ongoing",
-    "link": "https://www.volunteeringindia.com/blog/best-volunteering-programs-in-india-for-high-school-students/#:~:text=Street%20Children%20Volunteering%20in%20India,-This%20is%20undoubt",
-    "description": "Work with underprivileged children in India through education and support."
+    "link": "https://www.shad.ca/apply/",
+    "description": "Summer enrichment program for high-achieving Canadian students in STEM and business."
   },
   {
     "title": "Elections Canada",
@@ -238,6 +56,27 @@
     "description": "Help with animal care, education, and conservation programs."
   },
   {
+    "title": "Sick Kids Hospital",
+    "type": "volunteer",
+    "deadline": "March 20th",
+    "link": "https://www.sickkids.ca/en/careers-volunteer/volunteering/volunteer-programs/",
+    "description": "Volunteer at Toronto's largest children's hospital in various roles."
+  },
+  {
+    "title": "St. Joseph Hospital",
+    "type": "volunteer",
+    "deadline": "Ongoing",
+    "link": "https://www.volgistics.com/appform/2122758960",
+    "description": "Support patients and staff in a healthcare setting."
+  },
+  {
+    "title": "Micheal Garron Hospital",
+    "type": "volunteer",
+    "deadline": "Ongoing",
+    "link": "https://www.tehn.ca/careers-volunteering/volunteering/student-volunteer-program",
+    "description": "Hospital volunteer program with various support roles."
+  },
+  {
     "title": "Daily Bread Food Bank",
     "type": "volunteer",
     "deadline": "Ongoing",
@@ -266,16 +105,156 @@
     "description": "Accelerator program for ambitious young people."
   },
   {
+    "title": "Wolf Scholarship",
+    "type": "scholarship",
+    "deadline": "Ongoing",
+    "link": "https://www.wolfscholars.com",
+    "description": "Canada's most immersive scholarship, designed for brilliant students who are curious about the world and driven to lead for the better."
+  },
+  {
+    "title": "TD Scholarship",
+    "type": "scholarship",
+    "deadline": "October 22 2025",
+    "link": "https://www.td.com/ca/en/personal-banking/solutions/student-banking/community-leadership-scholarship-for-canadians",
+    "description": "Since 1995, TD has awarded millions in TD Scholarships for Community Leadership to recognize students who have demonstrated an outstanding commitment to community leadership."
+  },
+
+
+  {
+    "title": " AI & Neurotech Grants – Up to $300K",
+    "type": "grant",
+    "deadline": "June 30 2025",
+    "link": "https://foresight.org/request-for-proposals/",
+    "description": "Open call for proposals in cutting-edge brain tech and AI research."
+  },
+  {
+    "title": " Partner for Global Fund for Children (GFC)",
+    "type": "internship",
+    "deadline": "June 30 2025",
+    "link": "https://globalfundforchildren.my.site.com/GFCGrants/s/expression-of-interest?language=en_US",
+    "description": "Join a global network supporting youth-led, community-based organizations."
+  },
+  {
+    "title": " Postdoctoral Fellowships in Science Communication – South Africa",
+    "type": "internship",
+    "deadline": "Seasonal Intake",
+    "link": "https://www0.sun.ac.za/crest/wp-content/uploads/2024/10/CREST-Postdoc-Application-2024.pdf",
+    "description": "Advance civic science at Stellenbosch University in 2025."
+  },
+  
+  {
+    "title": " The Leaders Summit 2025 – 20-100% Fee Waivers Available",
+    "type": "volunteer",
+    "deadline": "Dec 1 2025",
+    "link": "https://isldofficial.com/washington-usa-register/",
+    "description": "Build leadership capacity and global networks for impact."
+  },
+  {
+    "title": "UNESCO International Literacy Prizes",
+    "type": "grant",
+    "deadline": "June 27 2025",
+    "link": "https://www.unesco.org/en/prizes/literacy",
+    "description": "Recognizing innovative and impactful literacy projects worldwide."
+  },
+  
+  {
+    "title": "2025 AmplifyChange Opportunity Grant",
+    "type": "grant",
+    "deadline": "16 June 2025",
+    "link": "https://amplifychange.org/grant-type/opportunity-grant/",
+    "description": "Up to £75,000 to strengthen grassroots SRHR advocacy."
+  },
+  {
+    "title": "2025 H2HC Prizes for Innovation – $300K",
+    "type": "grant",
+    "deadline": "July 1 2025",
+    "link": "https://justfund.us",
+    "description": "Advancing youth health equity through food and nutrition solutions."
+  },
+  {
+    "title": " Challenge Program Officer – MIT Solve",
+    "type": "internship",
+    "deadline": "Seasonal Intake",
+    "link": "https://solve.mit.edu/challenges",
+    "description": "Lead global open innovation challenges from within a dynamic team."
+  },
+  {
+    "title": "Yale Young Global Scholars",
+    "type": "summer",
+    "deadline": "January 14th",
+    "link": "https://globalscholars.yale.edu/how-to-apply",
+    "description": "Academic enrichment program at Yale for outstanding high school students from around the world."
+  },
+  {
+    "title": "Johns Hopkins Pre-College Summer Program",
+    "type": "summer",
+    "deadline": "January 8",
+    "link": "https://summer.jhu.edu/programs-courses/pre-college-programs/",
+    "description": "Rigorous summer courses for high school students in STEM and humanities."
+  },
+  
+  {
+    "title": "Institute for Computing in Research – High School Research Internships",
+    "type": "internship",
+    "deadline": "Varies; summer + during the year internships",
+    "link": "https://computinginresearch.org/research-internships/",
+    "description": "High school students do research projects with mentors and get stipends with a focus on programming and research skills"
+   },
+   {
+    "title": "Small World Initiative – Remote Internship Program",
+    "type": "internship",
+    "deadline": "Rolling basis",
+    "link": "https://www.smallworldinitiative.org/join-our-team",
+    "description": "Opportunity for students to volunteer/ intern remotely on education/global health challenges, unpaid yet experimental."
+   },
+  {
+    "title": "Meta Summer Academy",
+    "type": "summer",
+    "deadline": "Seasonal Intake",
+    "link": "https://metasummeracademy.com/",
+    "description": "Explore tech and product development careers at Meta with mentorship and hands-on experience."
+  },
+
+  {
+    "title": "The Rockefeller University Summer Science Research Program",
+    "type": "summer",
+    "deadline": "Seasonal Intake",
+    "link": "https://www.rockefeller.edu/outreach/ssrp/",
+    "description": "Summer research program for students interested in biomedical sciences."
+  },
+  {
+    "title": "Columbia Writing Program",
+    "type": "summer",
+    "deadline": "Course Starts July 21-31",
+    "link": "https://precollege.sps.columbia.edu/programs/summer-programs/columbia-writing-academy-summer",
+    "description": "Two-week intensive writing course at Columbia for university or college prep."
+  },
+  {
+    "title": "Nokia Summer Internship",
+    "type": "summer",
+    "deadline": "Seasonal Intake",
+    "link": "https://www.nokia.com/about-us/careers/student-and-graduate-opportunities/canada/future-tech-summer-internship/",
+    "description": "Eight-week internship with Nokia engineering teams."
+  },
+  {
+    "title": "Summer Company Ontario",
+    "type": "grant",
+    "deadline": "Seasonal Intake",
+    "link": "https://www.ontario.ca/page/start-summer-company-students",
+    "description": "Learn to run your own student business with mentorship and support."
+  },
+
+  {
     "title": "Ladder Internships",
     "type": "internship",
-    "deadline": "Constant Opportunities",
+    "deadline": "Always opportunities provided",
     "link": "https://www.ladderinternships.com/ladder-internships-blog/law-internships-for-high-school-stude",
     "description": "Connects high school students with remote internships."
   },
   {
     "title": "Indeed",
     "type": "internship",
-    "deadline": "Constant Opportunities!",
+    "deadline": "Opportunities are always provided, no due date!",
     "link": "https://ca.indeed.com/q-internships-for-high-school-students-l-ontario-jobs.html",
     "description": "Job search platform listing internship opportunities."
   },
@@ -289,7 +268,7 @@
   {
     "title": "Inspirit AI",
     "type": "internship",
-    "deadline": "Constant Opportunities",
+    "deadline": "Opportunities are always provided, no due date!",
     "link": "https://www.inspiritai.com/blogs/ai-blog/business-internships-for-high-school-students",
     "description": "Curated list of business internships for students."
   },
@@ -303,35 +282,35 @@
   {
     "title": "Stand Out Search",
     "type": "internship",
-    "deadline": "Constant Opportunities!",
+    "deadline": "Varies for Opportunity",
     "link": "https://www.standoutsearch.com/",
     "description": "Career platform connecting students with internships."
   },
   {
     "title": "Youth of Canada",
     "type": "internship",
-    "deadline": "Constant Opportunities!",
+    "deadline": "Varies for Opportunity ",
     "link": "https://www.youthofcanada.ca/opportunities1",
     "description": "Connects students with scholarships and other opportunities."
   },
   {
     "title": "Job Bank Youth",
     "type": "internship",
-    "deadline": "Constant Opportunities!",
+    "deadline": "Varies for Opportunity",
     "link": "https://www.jobbank.gc.ca/youth",
     "description": "Government site for jobs and internships for youth."
   },
   {
     "title": "Crimson Education",
-    "type": "internship",
-    "deadline": "Ongoing",
+    "type": "internships",
+    "deadline": "Varies for Opportunity",
     "link": "https://www.crimsoneducation.org/ca/blog/internships-for-high-school-students/",
     "description": "Website with high-quality internship listings."
   },
   {
     "title": "College Vine",
     "type": "internship",
-    "deadline": "Ongoing",
+    "deadline": "Varies for Opportunity",
     "link": "https://blog.collegevine.com/computer-science-internships-for-high-school-students",
     "description": "Blog with many internship opportunities for students."
   },
@@ -448,20 +427,6 @@
     "description": "Proof skills required."
   },
   {
-    "title": "Goldman Sachs Summer Analyst",
-    "type": "Finance",
-    "deadline": "November",
-    "link": "https://www.goldmansachs.com/careers/students/programs/summer",
-    "description": "Target school helps."
-  },
-  {
-    "title": "Microsoft Explore Program",
-    "type": "Tech",
-    "deadline": "January",
-    "link": "https://careers.microsoft.com/students",
-    "description": "Freshmen/sophomores only."
-  },
-  {
     "title": "Telluride Association Summer Program (TASP)",
     "type": "Humanities",
     "deadline": "January 3",
@@ -496,13 +461,7 @@
     "link": "https://www.training.nih.gov",
     "description": "NIH location required."
   },
-  {
-    "title": "JPMorgan Chase Winning Women",
-    "type": "Finance",
-    "deadline": "September",
-    "link": "https://careers.jpmorgan.com",
-    "description": "Women-focused."
-  },
+
   {
     "title": "The Concord Review",
     "type": "Humanities",
@@ -532,18 +491,11 @@
     "description": "Multiple locations."
   },
   {
-    "title": "Google STEP",
-    "type": "Tech",
-    "deadline": "December",
-    "link": "https://buildyourfuture.withgoogle.com",
-    "description": "First-years only."
-  },
-  {
     "title": "Amazon Future Engineer",
     "type": "Tech",
     "deadline": "November",
     "link": "https://www.amazonfutureengineer.com",
-    "description": "Low-income focus."
+    "description": ""
   },
   {
     "title": "L'Oreal USA Fellowships",
@@ -551,13 +503,6 @@
     "deadline": "February",
     "link": "https://www.loreal.com",
     "description": "Women in STEM."
-  },
-  {
-    "title": "Columbia Science Honors Program",
-    "type": "STEM",
-    "deadline": "September",
-    "link": "https://www.sciencehonorsprogram.org",
-    "description": "NYC residents only."
   },
   {
     "title": "KPCB Fellows",
@@ -574,66 +519,10 @@
     "description": "Supports young entrepreneurs with $100k and mentorship."
   },
   {
-    "title": "Knight-Hennessy Scholars",
-    "type": "Grad Fellowship",
-    "deadline": "October",
-    "link": "https://knight-hennessy.stanford.edu",
-    "description": "Provides full funding for graduate study at Stanford University."
-  },
-  {
     "title": "Rhodes Scholarship",
     "type": "Grad Fellowship",
     "deadline": "October",
     "link": "https://www.rhodeshouse.ox.ac.uk",
     "description": "$70k per year for studying at Oxford University."
-  },
-  {
-    "title": "Gates Cambridge",
-    "type": "Grad Fellowship",
-    "deadline": "October",
-    "link": "https://www.gatescambridge.org",
-    "description": "Full ride fellowship for graduate students at Cambridge University."
-  },
-  {
-    "title": "Churchill Scholarship",
-    "type": "STEM Grad",
-    "deadline": "November",
-    "link": "https://www.churchillscholarship.org",
-    "description": "$60k funding for STEM graduate study at Cambridge University."
-  },
-  {
-    "title": "Fulbright US Student Program",
-    "type": "Grad/Research",
-    "deadline": "October",
-    "link": "https://us.fulbrightonline.org",
-    "description": "Varies funding for research or teaching abroad in over 120 countries."
-  },
-  {
-    "title": "Marshall Scholarship",
-    "type": "Grad Fellowship",
-    "deadline": "October",
-    "link": "https://www.marshallscholarship.org",
-    "description": "$40k per year for graduate study in the UK."
-  },
-  {
-    "title": "Paul & Daisy Soros Fellowship",
-    "type": "Grad",
-    "deadline": "October",
-    "link": "https://www.pdsoros.org",
-    "description": "$90k funding for graduate students in the USA."
-  },
-  {
-    "title": "Hertz Fellowship",
-    "type": "STEM PhD",
-    "deadline": "October",
-    "link": "https://hertzfoundation.org",
-    "description": "$250k for STEM PhD students in the USA."
-  },
-  {
-    "title": "NSF GRFP",
-    "type": "STEM Grad",
-    "deadline": "October",
-    "link": "https://www.nsfgrfp.org",
-    "description": "$34k per year for STEM graduate students in the USA."
   }
 ]
